@@ -1,2 +1,0 @@
-# bootcamp-devops-git
-hola
