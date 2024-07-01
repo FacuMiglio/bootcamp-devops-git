@@ -4,7 +4,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 echo "Verificando branch y repo"
-                git branch: 'develop', url: 'https://github.com/FacuMiglio/bootcamp-devops-git.git'
+                git branch: 'main', url: 'https://github.com/FacuMiglio/bootcamp-devops-git.git'
             }
         }
 
@@ -12,7 +12,7 @@ pipeline {
             steps{
                 echo "Desplegando en Apache..."
                 // Copiar archivos a WebServer1 - Test
-                echo "Copiando en WebServer - TEST"
+                echo "Copiando en WebServer - MAIN"
                 sh 'scp -o StrictHostkeyChecking=no -r * facu@192.168.100.20:/var/www/html/'
                 }
         }
