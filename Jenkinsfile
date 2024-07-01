@@ -13,7 +13,7 @@ pipeline {
                 echo "Desplegando en Apache..."
                 // Copiar archivos a WebServer1 - Test
                 echo "Copiando en WebServer - TEST"
-                sh 'scp -o StrictHostkeyChecking=no -r * facu@192.168.0.51:/var/www/html/'
+                sh 'scp -o StrictHostkeyChecking=no -r * facu@192.168.100.20:/var/www/html/'
                 }
         }
 
